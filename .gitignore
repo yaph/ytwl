@@ -1,0 +1,4 @@
+# Chrome package and key files
+*.crx
+*.pem
+*.zip

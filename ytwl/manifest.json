@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "version": "1.8",
+  "name": "My Watch Later Link for Youtube",
+  "description": "Display a link to your YouTube Watch Later playlist in the top navigation of YouTube.",
+  "icons": {
+    "48": "ytwl-48x48.png",
+    "128": "ytwl-128x128.png"
+  },
+  "content_scripts": [{
+    "matches": ["http://*.youtube.com/*"],
+    "js": ["ytwl.js"],
+    "run_at": "document_end"
+  }]
+}
